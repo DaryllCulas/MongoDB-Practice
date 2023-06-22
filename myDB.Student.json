@@ -1,0 +1,32 @@
+[{
+  "_id": 2023001,
+  "firstName": "Daryll",
+  "lastName": "Culas",
+  "age": 30,
+  "YearLevel": "3rd Year",
+  "Course": "BSIT"
+},
+{
+  "_id": 2023005,
+  "firstName": "Tanjiro",
+  "lastName": "Kamado",
+  "age": 23,
+  "YearLevel": "2nd Year",
+  "Course": "BSCS"
+},
+{
+  "_id": 2023002,
+  "firstName": "Nezuko",
+  "lastName": "Kamado",
+  "age": 15,
+  "YearLevel": "1st Year",
+  "Course": "BSHM"
+},
+{
+  "_id": 2023003,
+  "firstName": "Uzui",
+  "lastName": "Tengen",
+  "age": 25,
+  "YearLevel": "4th Year",
+  "Course": "BSCpE"
+}]
