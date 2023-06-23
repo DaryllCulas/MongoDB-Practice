@@ -1,6 +1,5 @@
 use("myDb");
 
-db.Product.find();
 
 db.Product.insertMany([
   {
