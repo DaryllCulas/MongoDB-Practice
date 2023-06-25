@@ -1,0 +1,49 @@
+1. Q: Retrieve all products where the price is equal to 45.
+
+		- myDB> db.Product.find({price: {$eq:45}});
+		
+2. Q: Find products where the quantity is not equal to 10.
+
+		- myDB> db.Product.find({quantity: {$ne:10}});
+		
+3.Q: Get products with a price greater than 50.
+
+		-myDB> db.Product.find({price: {$gt: 50}});
+
+
+4. Q: Find products with a quantity greater than or equal to 10.
+
+		-myDB> db.Product.find({quantity: {$gte:10}});
+
+		
+5. Q: Retrieve products with a price less than 40.	
+
+		-myDB> db.Product.find({price: {$lt:40}});
+
+
+6. Q: Find products with a quantity less than or equal to 5.
+
+		-myDB> db.Product.find({quantity:{$lte:5}});
+
+
+7. Q: Get products where the name is equal to "Product A".
+
+		-myDB> db.Product.find({name: {$eq:"Product A"}});
+
+
+8. Q: Retrieve products where the price is not equal to 30.
+
+		-myDB> db.Product.find({price: {$ne:30}});
+
+
+9. Q: Find products with a quantity greater than 15 and a price less than or equal to 50.
+
+		-myDB> db.Product.find({ $and: [ {quantity: {$gt:15}}, {price: {$lte:50}} ]});
+
+
+10. Q: Get products where the price is less than 60 or the quantity is greater than 10.
+
+		
+		-myDB> db.Product.find({ $or: [ { price: { $lt: 60 } }, { quantity: { $gt: 10 } }] });
+
+		
