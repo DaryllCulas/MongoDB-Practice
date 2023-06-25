@@ -1,0 +1,24 @@
+1.Find products with a price greater than 50 AND a quantity less than or equal to 10.
+
+	* myDB> db.Product.find({ $and: [ { price: { $gt: 50 } }, { quantity: { $lte: 10 } }] });
+
+
+2.Find products with a price less than 30 OR a quantity greater than 15.
+
+	* myDB> db.Product.find({ $or: [ { price: { $lt: 30 } }, { quantity: { $gt: 15 } }] });
+
+
+3.Find products with a price not equal to 45.
+
+	* myDB> db.Product.find({price: {$not:{$eq:45}}});
+
+
+4.Find products with a price less than or equal to 40 OR a quantity less than 5.
+
+	* myDB> db.Product.find({ $or: [ { price: { $lte: 40 } }, { quantity: { $lt: 5 } }] });
+
+
+5. Find products with a price greater than 70 AND a quantity greater than or equal to 12.
+
+	* myDB> db.Product.find({ $and: [ { price: { $gt: 70 } }, { quantity: { $gte: 12 } }] });
+
