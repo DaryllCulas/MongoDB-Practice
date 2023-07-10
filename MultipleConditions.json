@@ -1,0 +1,53 @@
+db.students.find(
+{
+	$or: [ { age: 20 }, { grade: "A+" } ],
+	allowance: { $ne:100 }
+});
+
+-----------------------------------------------------------------------
+db.students.find(
+{
+	$or: [ 
+	
+	{ age:19 },
+	{ grade: { $in: ["A", "B"] } },
+	{ allowance: {$gt:150} }
+	
+	]
+	
+});
+
+
+-----------------------------------------------------------------------
+
+db.student.find(
+{
+	age: { $gt: 21 },
+	allowance: { $gt: 100},
+	
+	$or: [ {grade: "A"}, {grade: {$ne: "B"}} ]	
+});
+
+
+
+-----------------------------------------------------------------------
+db.student.find(
+{
+	$or: [ { age: {$lt:20} }, { allowance: {$lte:100} } ],
+	grade: { $ne: "A+" }
+	
+});
+
+
+
+
+db.student.find(
+{
+	name: "daryll",
+	age: {$gte:45},
+	$or: [ {purchase: "Tea"},{ quantity :{$ne: 45}} ]
+
+}
+
+
+);
