@@ -1,6 +1,6 @@
 use("myDb");
 
-
+ 
 db.Product.insertMany([
   {
     _id: 1,
