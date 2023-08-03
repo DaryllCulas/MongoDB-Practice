@@ -1,5 +1,5 @@
 use("myDb");
-
+ 
  
 db.Product.insertMany([
   {
