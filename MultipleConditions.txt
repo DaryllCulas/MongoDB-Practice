@@ -1,4 +1,4 @@
-db.students.find(
+db.students.find( 
 {
 	$or: [ { age: 20 }, { grade: "A+" } ],
 	allowance: { $ne:100 }
